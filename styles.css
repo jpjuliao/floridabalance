@@ -27,10 +27,19 @@ header .menu-main a {
 }
 header .menu-right{
   padding: 20px 0;
+  position:relative;
 }
 header .menu-right input[type=search] {
   border:none;
   box-shadow:none;
+  float: left;
+}
+header .menu-right .icon {
+  position: absolute;
+  top: 30px;
+  left: -20px;
+  height: auto;
+  width: 20px;
 }
 header .menu-right li a {
     padding-left: 20px;
