@@ -55,23 +55,36 @@ footer {}
 .button {
   background: #7abf55;
   text-transform:uppercase;
+  line-height: 1.1;
   }
 .button:hover {}
+.button img{
+  height: 20px;
+  top: 17px;
+  position: absolute;
+  left: 12px;
+}
 /* END BUTTONS */
 
 /* HOME SLIDER */
 .home-slider {
+    padding-right: 0;
 }
 .home-slider .button-group {
   position:relative;
   z-index:5;
-  margin-bottom: -75px;
-  margin-top: 30px;
+  margin-bottom: -85px;
+  margin-top: 25px;
   margin-left: 45px;
 }
-.home-slider .button-group .button {}
-.home-slider .orbit {
+.home-slider .button-group .button {
+    max-width: 140px;
+    position: relative;
+    text-align: left;
+    padding-left: 45px;
+    margin-left: 1px;
 }
+.home-slider .orbit {}
 .home-slider .orbit-container {}
 .home-slider .orbit-previous,
 .home-slider .orbit-next {}
@@ -115,7 +128,11 @@ footer {}
 .home-tabs .tabs {
     border: none;
 }
-.home-tabs .tabs-title {
+.home-tabs .tabs-title a {
+  padding-left: 14px;
+}
+.home-tabs .tabs-title a img {
+  height: 18px;
 }
 .home-tabs .tabs-title.is-active a {
   background: #0472de;
