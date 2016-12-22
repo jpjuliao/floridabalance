@@ -221,9 +221,56 @@ footer {}
 /* END FEATURED MENU BAR */
 
 /* SIMPLE MENU BAR */
-.simple-menu-bar {}
+.simple-menu-bar {
+  max-width: 1170px;
+  position:relative;
+  overflow:hidden;
+}
+.simple-menu-bar::after {
+  content:'';
+  display:block;
+  height:30px;
+  box-shadow: 0 10px 15px #d2d2d2 inset;
+  margin-left: -20px;
+  margin-right: -20px;
+  display: block;
+}
+.simple-menu-bar a {
+    padding: 20px 0;
+    display: inline-block;
+}
 /* END SIMPLE MENU BAR */
 
 /* SOCIAL LINKS */
 .social-link {}
 /* END SOCIAL LINK */
+
+/* IMAGE BACKGROUND SECTION */
+.image-bg-section {
+    position: relative;
+    overflow:hidden;
+  min-height:450px
+}
+.image-bg-section img {
+  position:absolute;
+  left:0;
+  right:0;
+}
+.image-bg-section h3,
+.image-bg-section p,
+.image-bg-section a {
+  position:relative;
+  margin: 20px;
+}
+/* END IMAGE BACKGROUND SECTION */
+
+/* BANNERS SIDEBAR */
+.banners-sidebar p {
+    background: #ebebeb;
+    padding: 20px 20px 0;
+    margin: 0;
+}
+.banners-sidebar p:last-child {
+  padding-bottom: 20px;
+}
+/* END BANNERS SIDEBAR */
