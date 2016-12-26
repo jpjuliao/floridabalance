@@ -131,7 +131,8 @@ footer {}
     border: none;
 }
 .home-tabs .tabs-title a {
-  padding-left: 14px;
+  padding-left: 13px;
+  padding-right: 13px;
 }
 .home-tabs .tabs-title a img {
   height: 18px;
