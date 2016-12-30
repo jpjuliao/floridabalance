@@ -24,6 +24,7 @@ header .menu-main a {
   text-transform: uppercase;
   font-size: 15px;
   padding-top: 0;
+  white-space: nowrap;
 }
 header .menu-right{
   padding: 20px 0;

@@ -53,6 +53,121 @@
     </header>
     
     <main>
+    
+      
+      <div class="row">
+
+        <div class="small-full large-9 columns">
+          <h1>EDUCATION</h1>
+          <img src="" alt="learn more, earn more, here's how">
+          <h2>Learn more, Earn more, Here's how</h2>
+          <p>Choose from many educational options, including classroom, online and video learning.</p>
+        </div>
+
+        <div class="small-full large-3 columns">
+         
+          <h2>In This Section</h2>
+          
+          <ul class="vertical menu" data-accordion-menu>
+            <li>
+              <a href="#"><img src="" alt="Licensing icon"> Licensing</a>
+              <ul class="menu vertical nested is-active">
+                <li><a href="#">License requirements</a></li>
+                <li><a href="#">New licensees</a></li>
+                <li><a href="#">License renewal</a></li>
+                <li><a href="#">Reactivate license</a></li>
+                <li><a href="#">CE Deficiency letters</a></li>
+              </ul>
+            </li>
+            <li><a href="#"><img src="" alt="GRI icon">GRI</a></li>
+            <li><a href="#"><img src="" alt="GRI icon"> Continuing education</a></li>
+            <li><a href="#"><img src="" alt="Videos icon"> Training Videos</a></li>
+          </ul>
+          
+        </div>
+        
+      </div>
+      
+      <div class="row">
+
+        <div class="small-full large-9 columns">
+          <h2>Search Education</h2>
+          <form action="">
+            <input type="radio" id="search-type-keyword" name="search-type[]" value="keyword"><label for="search-type-keyword">Keyword</label>
+            <input type="radio" id="search-type-topic" name="search-type[]" value="keyword"><label for="search-type-topic">Topic</label>
+            <input type="radio" id="search-type-resources" name="search-type[]" value="keyword"><label for="search-type-resources">By Type of Resources</label>
+            <input type="text" id="search"><label for="search" class="hide">Enter search terms</label>
+            <input type="submit" value="Submit" class="hide">
+          </form>
+        </div>
+
+        <div class="small-full large-3 columns">
+          <img src="" alt="MFRMLS Learn how we focus on your success">
+        </div>
+        
+      </div>
+      
+      <div class="row">
+       
+        <div class="small-full large-9 columns">
+          <h2>Events</h2>
+          <div>[calendar widget]</div>
+        </div>
+       
+        <div class="small-full large-3 columns">
+          <article>
+            <img src="" alt="Video a Century of Service">
+            <h3>A Century of Service</h3>
+          </article>
+          <article>
+            <img src="" alt="Video Florida Realtors Host RE Barcamp">
+            <h3>Florida Realtors Host RE Barcamp</h3>
+          </article>
+        </div>
+        
+      </div>
+      
+      <div class="row">
+       
+        <h2>Hot Topics</h2>
+       
+        <div class="small-full large-4 columns">
+          <article>
+            <img src="" alt="image Short on CE credits">
+            <h3>Short on CE credits</h3>
+            <p>Sort through the statewide Education Calendar to find courses near you</p>
+            <div class="row">
+              <div class="small-6 columns"></div>
+              <div class="small-6 columns"><a href="#">Check it out</a></div>
+            </div>
+          </article>
+        </div>
+       
+        <div class="small-full large-4 columns">
+          <article>
+            <img src="" alt="image Chris Smith: Better Lead Conversions">
+            <h3>Chris Smith: Better Lead Conversion</h3>
+            <p>Convert leads using Facebook as a marketing channel. It’s a rich source for generating new business. People love pictures... </p>
+            <div class="row">
+              <div class="small-6 columns"><p>October 25, 2015</p></div>
+              <div class="small-6 columns"><a href="#">Read more</a></div>
+            </div>
+          </article>
+        </div>
+       
+        <div class="small-full large-4 columns">
+          <article>
+            <img src="" alt="image GRI fast track">
+            <h3>GRI fast track</h3>
+            <p>Get your GRI designation through Florida Realtors! Nothing matches the knowledge that is learned in this comprehensive course.</p>
+            <div class="row">
+              <div class="small-6 columns"></div>
+              <div class="small-6 columns"><a href="#">Sign up</a></div>
+            </div>
+          </article>
+        </div>
+        
+      </div>
 
     </main>
 
@@ -115,9 +230,15 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/foundation.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/plugins/foundation.accordionMenu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/plugins/foundation.util.motion.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/plugins/foundation.util.keyboard.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/plugins/foundation.util.nest.min.js"></script>
     <script>
-      $(document).foundation();
+        $(document).ready(function () {
+          $(document).foundation();
+        });
     </script>
   </body>
 </html>
