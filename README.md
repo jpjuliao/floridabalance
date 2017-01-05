@@ -1,5 +1,5 @@
-[Home](https://jpjuliao.github.io/floridabalance/)
+<a href="https://jpjuliao.github.io/floridabalance/" target="_blank">Home</a>
 
-[Education](https://jpjuliao.github.io/floridabalance/education.html)
+<a href="https://jpjuliao.github.io/floridabalance/education.html" target="_blank">Education</a>
 
-[Licensing Requirements](https://jpjuliao.github.io/floridabalance/licensing-requirements.html)
+<a href="https://jpjuliao.github.io/floridabalance/licensing-requirements.html" target="_blank">Licensing Requirements</a>
