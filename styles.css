@@ -49,7 +49,10 @@ header .menu-right li a {
 /* END HEADER */
 
 /* FOOTER */
-footer {}
+footer {
+    background: #e6e6e6;
+    padding-top: 30px;
+}
 /* END FOOTER */
 
 /* BUTTONS */
