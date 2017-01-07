@@ -572,3 +572,60 @@ footer {
     max-height:70px;
 }
 /* END SPONSORS BAR */
+
+/* CALENDAR */
+.fc-row.fc-widget-header {
+}
+thead.fc-head {
+    display: none;
+}
+tbody.fc-body {
+}
+td.fc-widget-content {}
+.fc-scroller.fc-day-grid-container {
+    overflow: visible !important;
+}
+.fc-day-grid.fc-unselectable {}
+.fc-row.fc-week.fc-widget-content {
+    height: 56px !important;
+    min-height: initial !important;
+}
+.fc-unthemed table {}
+.fc-unthemed thead {}
+.fc-unthemed tbody {
+}
+.fc-row .fc-content-skeleton td, .fc-row .fc-helper-skeleton td {border-color: #e6e6e6;font-size: 18px;}
+.fc-basic-view .fc-day-number, .fc-basic-view .fc-week-number{
+    float: left !important;
+    padding: 15px !important;
+}
+.fc-content-skeleton table thead {
+    background: none;
+}
+.fc-unthemed .fc-content, .fc-unthemed .fc-divider, .fc-unthemed .fc-list-heading td, .fc-unthemed .fc-list-view, .fc-unthemed .fc-popover, .fc-unthemed .fc-row, .fc-unthemed tbody, .fc-unthemed td, .fc-unthemed th, .fc-unthemed thead {
+    border-color: #e6e6e6;
+}
+.fc-unthemed .fc-row.fc-week.fc-widget-content tbody{
+}
+.fc-unthemed .fc-row.fc-week.fc-widget-content tbody td {
+    background: none;
+    position: relative;
+}
+.fc-unthemed td.fc-today.fc-state-highlight {
+    background: #ececec;
+}
+a.fc-day-grid-event.fc-h-event.fc-event {
+    position: relative;
+    top: -44px;
+    border-radius: 25px;
+    margin: 0;
+    margin-left: 35px;
+    width: 25px;
+    background: blue;
+    display: block;
+    line-height: 26px;
+    text-align: center;
+}
+/* END CALENDAR */
+
+.events-calendar {}
