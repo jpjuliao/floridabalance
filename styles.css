@@ -664,3 +664,61 @@ a.fc-day-grid-event.fc-h-event.fc-event {
   right: -10px;
 }
 /* END BREADCRUMBS */
+
+/* MAIN-BANNER */
+.main-banner {
+    margin-bottom:30px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.main-banner h1,
+.main-banner h2,
+.main-banner p {
+    padding-left: 30px;
+}
+.main-banner h2 {
+    margin-top: -110px;
+    color: #7abf55;
+}
+/* END MAIN-BANNER */
+
+/* SUBMENU */
+.menu-accordion h2 {
+    color: #7abf55;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    padding-left: 20px;
+}
+.menu-accordion a {
+    color: #000;
+}
+.menu-accordion>ul>li>a {
+	padding-left: 30px !important;
+}
+.menu-accordion a.active{
+	background:#f7f7f7;
+}
+.menu-accordion a:hover {
+    color: #7abf55;
+}
+.menu-accordion li:not(:last-child),
+.is-accordion-submenu-parent > a {
+    border-bottom:1px solid #f1f1f1;
+}
+.menu-accordion {
+    padding-left: 0;
+    padding-right: 0;
+}
+.menu-accordion >ul{
+    border-left: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+}
+.menu-accordion .submenu a{
+	padding-left: 50px;
+}
+.menu-accordion .submenu a::before{
+	content:'> ';
+	color: #7abf55;
+}
+/* END SUBMENU */
