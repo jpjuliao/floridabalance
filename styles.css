@@ -182,8 +182,12 @@ h1,h2,h3,h4,h5,h6{
     color: #000;
     text-transform: uppercase;
 }
-h1{}
-h2{}
+h1{
+    font-size: 32px;
+}
+h2{
+    font-size: 22px;
+}
 h3{
     font-size: 20px;
 }
@@ -584,11 +588,13 @@ tbody.fc-body {
 td.fc-widget-content {}
 .fc-scroller.fc-day-grid-container {
     overflow: visible !important;
+    height: auto !important;
 }
 .fc-day-grid.fc-unselectable {}
 .fc-row.fc-week.fc-widget-content {
     height: 56px !important;
     min-height: initial !important;
+    overflow: hidden;
 }
 .fc-unthemed table {}
 .fc-unthemed thead {}
@@ -605,8 +611,7 @@ td.fc-widget-content {}
 .fc-unthemed .fc-content, .fc-unthemed .fc-divider, .fc-unthemed .fc-list-heading td, .fc-unthemed .fc-list-view, .fc-unthemed .fc-popover, .fc-unthemed .fc-row, .fc-unthemed tbody, .fc-unthemed td, .fc-unthemed th, .fc-unthemed thead {
     border-color: #e6e6e6;
 }
-.fc-unthemed .fc-row.fc-week.fc-widget-content tbody{
-}
+.fc-unthemed .fc-row.fc-week.fc-widget-content tbody{}
 .fc-unthemed .fc-row.fc-week.fc-widget-content tbody td {
     background: none;
     position: relative;
@@ -628,4 +633,34 @@ a.fc-day-grid-event.fc-h-event.fc-event {
 }
 /* END CALENDAR */
 
+/**/
 .events-calendar {}
+/**/
+
+/* BREADCRUMBS */
+.breadcrumb {
+    border-top: 1px solid #f2f2f2;
+    overflow:hidden;
+    position: relative;
+    padding-bottom: 15px;
+}
+.breadcrumb a {
+    padding: 8px; 0
+    color:#000;
+    display: inline-block;
+    color: #000;
+}
+.breadcrumb::after {
+  content:'';
+  display:block;
+  height:30px;
+  box-shadow: 0 10px 15px rgba(224, 224, 224, 0.66) inset;
+  display: block;
+  margin-bottom:-30px;
+  z-index:1;
+  position: absolute;
+  top: 40px;
+  left: -10px;
+  right: -10px;
+}
+/* END BREADCRUMBS */
