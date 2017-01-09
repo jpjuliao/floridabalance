@@ -683,12 +683,21 @@ a.fc-day-grid-event.fc-h-event.fc-event {
     padding-left: 0;
     padding-right: 0;
 }
-.main-banner h1,
-.main-banner h2,
-.main-banner p {
+.main-banner .column{
+  padding-left: 30px !important;
+}
+.main-banner .main-banner-inner .featured-text{
+  font-size:16px;
+  color:#000;
+  margin-top: -60px;
+  margin-bottom: 30px;
+}
+.main-banner .main-banner-inner h1,
+.main-banner .main-banner-inner h2,
+.main-banner .main-banner-inner p {
     padding-left: 30px;
 }
-.main-banner h2 {
+.main-banner .main-banner-inner h2 {
     margin-top: -110px;
     color: #7abf55;
 }
