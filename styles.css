@@ -590,6 +590,24 @@ img.footer-logo {
 /* END SPONSORS BAR */
 
 /* CALENDAR */
+div#calendar {
+    margin-top: -36px;
+}
+.fc-right button,.fc-right h2 {
+    display: inline;
+    margin: 0 5px;
+}
+.fc-toolbar button {
+    background: none;
+    border: none;
+    box-shadow: none;
+    color: #0472de;
+}
+.fc-toolbar h2 {
+    text-transform: none;
+    font-size: 18px;
+    color: #4e4e4e;
+}
 .fc-row.fc-widget-header {
 }
 thead.fc-head {
