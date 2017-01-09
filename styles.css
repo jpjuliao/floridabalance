@@ -249,7 +249,19 @@ header .menu-right li a {
 /* FOOTER */
 footer {
     background: #e6e6e6;
-    padding-top: 30px;
+    padding-top: 45px;
+    color: #000;
+    font-size: 14px;
+}
+footer a{
+	color: #000;
+}
+footer .menu>li>a{
+	padding:8px;
+}
+img.footer-logo {
+    margin-left: -44px;
+    margin-bottom: 15px;
 }
 /* END FOOTER */
 
