@@ -633,9 +633,21 @@ a.fc-day-grid-event.fc-h-event.fc-event {
 }
 /* END CALENDAR */
 
-/**/
+/* EVENTS CALENDAR */
 .events-calendar {}
-/**/
+.events-calendar .gray-bg-section{
+	padding:30px 60px;
+}
+.events-calendar .sidebar{
+	padding-top: 50px;
+}
+.events-calendar .sidebar a{
+	font-weight:bold;
+	margin-top: 15px;
+	display:block;
+	font-size:14px;
+}
+/* END EVENTS CALENDAR */
 
 /* BREADCRUMBS */
 .breadcrumb {
@@ -718,7 +730,109 @@ a.fc-day-grid-event.fc-h-event.fc-event {
 	padding-left: 50px;
 }
 .menu-accordion .submenu a::before{
-	content:'> ';
+	content:'';
+	background: url(images/arrow-right-green.png) no-repeat;
 	color: #7abf55;
+	width: 12px;
+	height: 12px;
+	display: inline-block;
 }
 /* END SUBMENU */
+
+/* BLUE BG SECTION */
+.blue-bg-section {
+    background: #0472de;
+    padding: 30px 20px;
+    margin-top: 7px;
+}
+.blue-bg-section h1,
+.blue-bg-section h2,
+.blue-bg-section h3,
+.blue-bg-section p,
+.blue-bg-section label {
+    color: #fff;
+}
+.blue-bg-section input[type="radio"]{
+	display:none;
+}
+.blue-bg-section label {
+	background: #cde3f8;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 5px 10px;
+	margin:0;
+	color:  #0472de;
+}
+.blue-bg-section label.active {
+	background:#fff;
+}
+.blue-bg-section form {
+    text-align:right;
+    margin-top: 110px;
+}
+.blue-bg-section input[type="submit"] {
+    position: relative;
+    top: -48px;
+    background: none;
+    border: none;
+    color: #0472de;
+    right: 5px;
+}
+.blue-bg-section input#search {
+    text-align:center;
+    border:none;
+    border-radius:5px;
+    border-top-right-radius:0;
+}
+.blue-bg-section form::before {
+    content:'';
+    background: url(images/icon-search-blue.png) no-repeat;
+    display:block;
+    height:20px;
+    width:20px;
+    margin-bottom: -64px;
+    position: relative;
+    z-index: 5;
+    left: 10px;
+}
+/* END BLUE BG SECTION */
+
+/* GRAY SECTION */
+.gray-bg-section {
+    background: #ddd;
+}
+/* END GRAY SECTION */
+
+/* TOPICS */
+.topics {
+    padding:30px 0;
+}
+.topics h2 {
+    text-align:center;
+    color: #7abf55;
+}
+.topics article{
+    background: #f2f2f2;
+    padding-bottom:30px;
+    min-height: 400px;
+    position:relative;
+}
+.topics article h3{
+    padding: 20px 30px 0px;
+    text-transform:none;
+}
+.topics article p{
+    padding: 00px 30px 10px;
+}
+.topics article .row{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom: 30px;
+    text-align: center;
+    font-size:13px;
+}
+.topics article .row a{
+	text-transform: uppercase;
+}
+/* END TOPICS */

@@ -55,7 +55,7 @@
     <main>
     
       <div class="row column breadcrumb">
-        <a href="#">Home</a> > <a href="#">Education</a>
+        <a href="#">Home</a> <img src="images/arrow-right-gray.png" alt=""> <a href="#">Education</a>
       </div>    
       
       <div class="row">
@@ -96,10 +96,10 @@
         <div class="small-full large-9 columns search-large">
           <h2>Search Education</h2>
           <form action="">
-            <input type="radio" id="search-type-keyword" name="search-type[]" value="keyword"><label for="search-type-keyword">Keyword</label>
+            <input type="radio" id="search-type-keyword" name="search-type[]" value="keyword"  checked="checked" ><label for="search-type-keyword">Keyword</label>
             <input type="radio" id="search-type-topic" name="search-type[]" value="keyword"><label for="search-type-topic">Topic</label>
             <input type="radio" id="search-type-resources" name="search-type[]" value="keyword"><label for="search-type-resources">By Type of Resources</label>
-            <img src="images/icon-search-blue.png" alt=""><input type="text" id="search"><label for="search" class="hide">Enter search terms</label>
+            <input type="text" id="search"><label for="search" class="hide">Enter search terms</label>
             <input type="submit" value="Search">
           </form>
         </div>
@@ -112,20 +112,20 @@
       
       <div class="row events-calendar">
        
-        <div class="small-full large-9 columns">
+        <div class="small-full large-9 columns gray-bg-section">
           <h2>Events</h2>
           <div id='calendar'></div>
         </div>
        
-        <div class="small-full large-3 columns">
-          <article>
+        <div class="small-full large-3 columns sidebar">
+          <p>
             <img src="images/video-century-service.jpg" alt="Video a Century of Service">
-            <h3>A Century of Service</h3>
-          </article>
-          <article>
+            <a href="#">A Century of Service</a>
+          </p>
+          <p>
             <img src="images/video-florida-realtors.jpg" alt="Video Florida Realtors Host RE Barcamp">
-            <h3>Florida Realtors Host RE Barcamp</h3>
-          </article>
+            <a href="#">Florida Realtors Host RE Barcamp</a>
+          </p>
         </div>
         
       </div>
@@ -152,7 +152,7 @@
             <h3>Chris Smith: Better Lead Conversion</h3>
             <p>Convert leads using Facebook as a marketing channel. It’s a rich source for generating new business. People love pictures... </p>
             <div class="row">
-              <div class="small-6 columns"><p>October 25, 2015</p></div>
+              <div class="small-6 columns">October 25, 2015</div>
               <div class="small-6 columns"><a href="#">Read more</a></div>
             </div>
           </article>
@@ -272,6 +272,23 @@
             }
         ]
       }) })</script>
+      
+    <!-- Search Type Selection -->
+    <script>$(document).ready(function(){
+      $('#search-type-keyword').change(function(){
+        $('label[for="search-type-keyword"], label[for="search-type-topic"], label[for="search-type-resources"]').removeClass('active');
+        if ($(this).is(':checked')) $('label[for="search-type-keyword"]').addClass('active');
+      });
+      $('#search-type-topic').change(function(){
+        $('label[for="search-type-keyword"], label[for="search-type-topic"], label[for="search-type-resources"]').removeClass('active');
+        if ($(this).is(':checked')) $('label[for="search-type-topic"]').addClass('active');
+      });
+      $('#search-type-resources').change(function(){
+        $('label[for="search-type-keyword"], label[for="search-type-topic"], label[for="search-type-resources"]').removeClass('active');
+        if ($(this).is(':checked')) $('label[for="search-type-resources"]').addClass('active');
+      });
+      $('#search-type-keyword').trigger('change');
+    });</script>
     
   </body>
 </html>
