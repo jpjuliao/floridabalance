@@ -781,11 +781,33 @@ a.fc-day-grid-event.fc-h-event.fc-event {
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	padding: 5px 10px;
-	margin:0;
+	margin:0 1px;
 	color:  #0472de;
+	position:relative;
+	z-index:10;
+}
+.blue-bg-section label span {
+	position:relative
+}
+.blue-bg-section label.last{
+	margin-right:5px;
+}
+.blue-bg-section label::before {
+	content:'';
+	display:block;
+	border-left: 0px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 31px solid #cde3f8;
+	width:30px;
+	position:absolute;
+	top:4px;
+	right:-5px;
 }
 .blue-bg-section label.active {
 	background:#fff;
+}
+.blue-bg-section label.active::before {
+	border-bottom: 31px solid #ffffff;
 }
 .blue-bg-section form {
     text-align:right;
